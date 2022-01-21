@@ -1,0 +1,24 @@
+{
+  "name": "buildbite",
+  "version": "1.0.0",
+  "description": "Techlove WordPress theme 1.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pernillasterner/buildbite.git"
+  },
+  "author": "Techlove",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pernillasterner/buildbite/issues"
+  },
+  "homepage": "https://github.com/pernillasterner/buildbite#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.0"
+  }
+}
