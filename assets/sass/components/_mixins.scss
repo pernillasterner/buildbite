@@ -1,0 +1,42 @@
+@mixin heading() {
+    font-family: $space_grotesk;
+    font-weight: normal;
+}
+
+
+@mixin h1() {
+    @include heading;
+    font-size: 64px;
+    line-height: 78px;
+}
+
+@mixin h2() {
+    @include heading;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+@mixin h3() {
+    @include heading;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@mixin h4() {
+    @include heading;
+    font-size: 21px;
+    line-height: 29px;
+}
+
+@mixin h5() {
+    @include heading;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin h6() {
+    @include heading;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
