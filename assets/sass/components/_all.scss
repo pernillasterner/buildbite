@@ -1,1 +1,14 @@
+// varibales & functions
+@import "variables";
+@import "functions";
+
+// base & layout
 @import "main";
+@import "mixins";
+@import "content";
+@import 'breakpoints';
+
+// compontents (navbar, button, card)
+
+// utilities (margin, padding, opacity)
+@import 'utilities';
