@@ -1,0 +1,73 @@
+// primary colors
+$brick: #aa3c28 !default;
+$light_brick: #ffc8af !default;
+$dark_blue: #32328c !default;
+$light_blue: #c8e1ff !default;
+$sand_01: #dcdcd2 !default;
+$sand_02: #e9e8e4 !default;
+$sand_03: #f0f0f0 !default;
+$sand_04: #f5f5f5 !default;
+
+// secondary colors
+$dark_green: #37414b !default;
+$red_accent: #ff4b00 !default;
+
+// additional colors
+$negative: #f52837 !default;
+$negative_light: #fce5e5 !default;
+$positive: #00be8c !default;
+$warning: #ffb200 !default;
+$info: #0063e1 !default;
+
+// gray scale
+$black: #000000 !default;
+$grey_01: #37414b !default;
+$grey_02: #4b545d !default;
+$grey_03: #5f676f !default;
+$grey_04: #737a81 !default;
+$grey_05: #878d93 !default;
+$grey_06: #9c9fa3 !default;
+$grey_07: #afb3b7 !default;
+$grey_08: #c3c5c8 !default;
+$grey_09: #c3c6c9 !default;
+$grey_10: #ebeced !default;
+$white: #ffffff !default;
+
+
+// fonts
+$space_grotesk: 'Space Grotesk', sans-serif !default;
+
+
+// spacing
+$base-padding:                0.75rem !default;
+$base-margin:                 0.75rem !default;
+
+// borders
+$base-border-thickness:       1px !default;
+$base-border-radius:          20px !default;
+
+// box-shadow
+$base-box-shadow:             1px 3px 5px rgba(0,0,0,0.1) !default;
+
+// font-size
+$base-font-size:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                ($base-font-size * .875) !default;
+$font-size-lg:                ($base-font-size * 1.25) !default;
+
+$h1-font-size:                $base-font-size * 4 !default;
+$h2-font-size:                $base-font-size * 2.5 !default;
+$h3-font-size:                $base-font-size * 1.75 !default;
+$h4-font-size:                $base-font-size * 1.313 !default;
+$h5-font-size:                $base-font-size * 0.875 !default;
+$h6-font-size:                $base-font-size * 0.813 !default;
+
+
+// font-weight
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$base-font-weight:            $font-weight-normal !default;
+
+// line-height
+$base-line-height:            1.5 !default;
