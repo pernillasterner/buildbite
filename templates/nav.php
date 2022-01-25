@@ -15,7 +15,7 @@
             wp_nav_menu( $args );
             
             ?>
-            <button class="btn btn-nav">get started</button>
+            <a href="" class="btn btn-nav">get started</a>
         </div>
     </nav>
 
