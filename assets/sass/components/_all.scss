@@ -1,14 +1,17 @@
 // varibales & functions
+@import "mixins";
 @import "variables";
 @import "functions";
 
 // base & layout
-@import "main";
-@import "mixins";
 @import "content";
 @import 'breakpoints';
 
 // compontents (navbar, button, card)
+@import 'menu';
+// @import 'navbar';
+@import "main";
+@import 'footer';
 
 // utilities (margin, padding, opacity)
 @import 'utilities';
