@@ -9,7 +9,7 @@ if($footer_columns):
             <div class="col-lg-6 col-4"><img title="linkedin" alt="linkedin" src="<?php echo get_template_directory_uri() .'/assets/img/Brick.svg'; ?>"></div>
             <div class="col-lg-6 col-8">
                 <?php foreach ( $footer_columns as $column ): if($column): $col = $column['column']; ?>
-                    <div class="row preamble">
+                    <div class="row">
                     <?php 
                         foreach($col as $row): 
                             if($row['item_tyoe'] === 'title'): 
