@@ -9,7 +9,7 @@
 		text-align: start;
 		border-left: 1px solid $white;
 
-		p:last-child {
+		p:last-child, a:last-child {
 			margin-top: $base-margin * 3;
 		}
 	}
