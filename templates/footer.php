@@ -29,8 +29,8 @@ if($footer_columns):
                 <p class="copyright">©BuildBite <?php echo date("Y"); ?>  •  All Rights Reserved.</p>
             </div>
             <div class="col-6 text-end">
-                <a class="pl-1" href="<?php echo site_url('/terms-of-use'); ?>" target="_blank" title="Terms of use" rel="nofollow">Terms of use</a>
-                <a class="pl-1" href="<?php echo site_url('/privacy-policy'); ?>" target="_blank" title="Privacy Policy" rel="nofollow">Privacy Policy</a>
+                <a class="pl-1 text-decoration-underline" href="<?php echo site_url('/terms-of-use'); ?>" target="_blank" title="Terms of use" rel="nofollow">Terms of use</a>
+                <a class="pl-1 text-decoration-underline" href="<?php echo site_url('/privacy-policy'); ?>" target="_blank" title="Privacy Policy" rel="nofollow">Privacy Policy</a>
             </div>
         </div>
     </div>
