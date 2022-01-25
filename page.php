@@ -25,7 +25,6 @@
                             $slug = sanitize_title($name);
                             get_template_part( 'templates/components/globals/' . $slug );
                         else :
-                            echo "test";
                             get_template_part( 'templates/components/' . get_row_layout() );
                         endif;
                     ?>
