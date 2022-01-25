@@ -1,30 +1,30 @@
 @mixin h1() {
-    font-size: $h1;
+    font-size: $h1-font-size;
     line-height: 78px;
 }
 
 @mixin h2() {
-    font-size: $h2;
+    font-size: $h2-font-size;
     line-height: 48px;
 }
 
 @mixin h3() {
-    font-size: $h3;
+    font-size: $h3-font-size;
     line-height: 36px;
 }
 
 @mixin h4() {
-    font-size: $h4;
+    font-size: $h4-font-size;
     line-height: 29px;
 }
 
 @mixin h5() {
-    font-size: $h5;
+    font-size: $h5-font-size;
     line-height: 20px;
 }
 
 @mixin h6() {
-    font-size: $h6;
+    font-size: $h6-font-size;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -34,4 +34,4 @@
     background: -webkit-linear-gradient(top, $top 0%,$bottom 100%);
     background: linear-gradient(to bottom, $top 0%,$bottom 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
-  }
+}
