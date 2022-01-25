@@ -1,0 +1,23 @@
+.hero_content {
+	position: absolute!important;
+	bottom: 5rem;
+    color: white;
+	padding: 0 $base-padding * 5;
+	border-left: 1px solid $white;
+
+	div:first-child {
+		text-align: start;
+		border-left: 1px solid $white;
+
+		p:last-child {
+			margin-top: $base-margin * 3;
+		}
+	}
+
+	div:last-child {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+}
