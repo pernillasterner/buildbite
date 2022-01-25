@@ -16,7 +16,7 @@
         <div class="row hero_content">
             <div class="col-8">
                 <?php if($header) : ?>
-                    <h2><?php echo $header; ?></h2>
+                    <?php echo '<' . $header_tag . '>' . $header . '</' . $header_tag . '>'; ?>
                 <?php endif; ?>
                 <?php if($preamble) : ?>
                     <p><?php echo $preamble; ?></p>
