@@ -1,3 +1,67 @@
+* {
+    margin: 0;
+}
+
 body {
-    background: lightgreen;
+    background: $white;
+    font-family: $space_grotesk;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: $base-font-weight;
+    color: $dark_green;
+}
+
+main {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $dark_green;
+    transition: color 0.2s;
+    font-size: $h5-font-size;
+
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    overflow: hidden;
+}
+
+ul li {
+    list-style: none;
+    float: right;
+}
+
+// .hide_mobile {
+//     @include media-breakpoint-down() {
+//         display: none;
+//     }
+// }
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.hide {
+    display: none;
 }
