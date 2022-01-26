@@ -11,18 +11,28 @@
     font-size: $h6-font-size;
     display: flex;
 
-    &::after {
-        content: url("../img/Arrow_white.svg");
-        padding-left: 8px;
-    }
-
-    &.btn-nav {
-        background: $btn-nav;
-        color: $black;
-        margin-left: $base-margin * 7;
-
         &::after {
-            content: url("../img/Arrow_black.svg");
+            content: url("../img/Arrow_white.svg");
+            padding-left: 8px;
         }
-    }
+
+        &.btn-nav {
+            background: $btn-nav;
+            color: $black;
+            margin-left: $base-margin * 7;
+
+            &::after {
+                content: url("../img/Arrow_black.svg");
+            }
+        }
+
+        &.btn-hero {
+            background: $white;
+            color: $dark_green;
+            max-width: 140px;
+            
+            &::after {
+                content: url("../img/Arrow_black.svg");
+            }
+        }
 }
