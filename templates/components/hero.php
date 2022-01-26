@@ -1,5 +1,5 @@
 <?php $hero_content = get_sub_field('content'); ?>
-
+<?php $linear_gradient = 'linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 80%)'; ?>
 
 <section class="component component_hero big">
     <?php foreach( $hero_content as $content ) : ?>
@@ -12,7 +12,7 @@
             $qr_image       = $content['qr_image'];
         ?>
         
-        <div class="hero_image" style="background-image: url('<?php echo (!empty($main_image)) ? $main_image['url'] : ''; ?>')"></div>
+        <div class="hero_image" style="background-image: <?php echo $linear_gradient; ?>, url('<?php echo (!empty($main_image)) ? $main_image['url'] : ''; ?>')"></div>
 
         <div class="row hero_content">
             <div class="col-6">
