@@ -27,7 +27,9 @@
                 <?php endif; ?>
             </div>
             <div class="col-6">
-                <img title="qr-code" alt="qr-code" src="<?php echo $qr_image['url']; ?>">
+                <?php if($qr_image) : ?>
+                    <img title="qr-code" alt="qr-code" src="<?php echo $qr_image['url']; ?>">
+                <?php endif; ?>
             </div>
         </div>
     <?php endforeach; ?>
