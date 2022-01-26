@@ -15,7 +15,7 @@
         <div class="hero_image" style="background-image: url('<?php echo (!empty($main_image)) ? $main_image['url'] : ''; ?>')"></div>
 
         <div class="row hero_content">
-            <div class="col-8">
+            <div class="col-6">
                 <?php if($header) : ?>
                     <?php echo '<' . $header_tag . '>' . $header . '</' . $header_tag . '>'; ?>
                 <?php endif; ?>
@@ -26,7 +26,7 @@
                     <a href="<?php $button['link']; ?>" class="btn btn-hero"><?php echo $button['title']; ?></a>
                 <?php endif; ?>
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <img title="qr-code" alt="qr-code" src="<?php echo $qr_image['url']; ?>">
             </div>
         </div>
