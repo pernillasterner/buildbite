@@ -9,9 +9,13 @@
 
 // compontents (navbar, button, card)
 @import 'menu';
-// @import 'navbar';
 @import "main";
 @import 'footer';
 
 // utilities (margin, padding, opacity)
 @import 'utilities';
+@import "buttons";
+
+// page components
+@import "page_components/hero";
+@import "page_components/text_and_image";

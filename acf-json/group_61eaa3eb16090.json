@@ -1,0 +1,677 @@
+{
+    "key": "group_61eaa3eb16090",
+    "title": "Kompontenter",
+    "fields": [
+        {
+            "key": "field_61eaa3ffe33af",
+            "label": "Komponenter",
+            "name": "page_components",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_61f064dc0056a": {
+                    "key": "layout_61f064dc0056a",
+                    "name": "text_and_image",
+                    "label": "Text och bild",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_61f065600056b",
+                            "label": "Beskrivning",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Den här komponenten är för text och bild som alternerar position mellan vänster-höger och höger-vänster.\r\nDu väljer hur första raden ska se ut, sen alternerar det.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_61f065bd0056c",
+                            "label": "Datumstyra komponent?",
+                            "name": "show_date_fields",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_61f065f10056d",
+                            "label": "Datum",
+                            "name": "component_date",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61f065bd0056c",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61f0660e0056e",
+                                    "label": "Från",
+                                    "name": "date_from",
+                                    "type": "date_time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "Y-m-d H:i",
+                                    "return_format": "Y-m-d H:i",
+                                    "first_day": 1
+                                },
+                                {
+                                    "key": "field_61f066370056f",
+                                    "label": "Till",
+                                    "name": "date_to",
+                                    "type": "date_time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "Y-m-d H:i",
+                                    "return_format": "Y-m-d H:i",
+                                    "first_day": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_61f144cab32db",
+                            "label": "Rubrik",
+                            "name": "header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61f17be32259b",
+                            "label": "Rubrik-tagg",
+                            "name": "header-tag",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "h1": "H1",
+                                "h2": "H2",
+                                "h3": "H3",
+                                "h4": "H4"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "h2",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_61f144b1b32da",
+                            "label": "Rad",
+                            "name": "row",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61f1450cb32dc",
+                                    "label": "Innehåll",
+                                    "name": "content",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "row",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_61f14530b32dd",
+                                            "label": "Underrubrik",
+                                            "name": "subheading",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_61f14574b32de",
+                                            "label": "Text",
+                                            "name": "text",
+                                            "type": "textarea",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "new_lines": ""
+                                        },
+                                        {
+                                            "key": "field_61f14588b32df",
+                                            "label": "Taggar",
+                                            "name": "tags",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "row",
+                                            "button_label": "",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_61f1459eb32e0",
+                                                    "label": "Tagg",
+                                                    "name": "tag",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "key": "field_61f15f7173ab0",
+                                            "label": "Bild",
+                                            "name": "image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 1,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "array",
+                                            "preview_size": "thumbnail",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61f14402b32d3": {
+                    "key": "layout_61f14402b32d3",
+                    "name": "kopia",
+                    "label": "Kopia",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_61f14402b32d4",
+                            "label": "Beskrivning",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Den här komponenten är för text och bild som alternerar position mellan vänster-höger och höger-vänster.\r\nDu väljer hur första raden ska se ut, sen alternerar det.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
+                            "key": "field_61f14402b32d5",
+                            "label": "Datumstyra komponent?",
+                            "name": "show_date_fields",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_61f14402b32d6",
+                            "label": "Datum",
+                            "name": "component_date",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61f14402b32d5",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61f14402b32d7",
+                                    "label": "Från",
+                                    "name": "date_from",
+                                    "type": "date_time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "Y-m-d H:i",
+                                    "return_format": "Y-m-d H:i",
+                                    "first_day": 1
+                                },
+                                {
+                                    "key": "field_61f14402b32d8",
+                                    "label": "Till",
+                                    "name": "date_to",
+                                    "type": "date_time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "Y-m-d H:i",
+                                    "return_format": "Y-m-d H:i",
+                                    "first_day": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_61eaa48318eda": {
+                    "key": "layout_61eaa48318eda",
+                    "name": "hero",
+                    "label": "Hero",
+                    "display": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_61eaa4ede33b1",
+                            "label": "Datumstyra komponent?",
+                            "name": "show_date_fields",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_61eaa521e33b2",
+                            "label": "Datum",
+                            "name": "component_date",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61eaa4ede33b1",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61eaa548e33b3",
+                                    "label": "Från",
+                                    "name": "date_from",
+                                    "type": "date_time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "Y-m-d H:i",
+                                    "return_format": "Y-m-d H:i",
+                                    "first_day": 1
+                                },
+                                {
+                                    "key": "field_61eaa574e33b4",
+                                    "label": "Till",
+                                    "name": "date_to",
+                                    "type": "date_time_picker",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "display_format": "Y-m-d H:i",
+                                    "return_format": "Y-m-d H:i",
+                                    "first_day": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_61eaa59ee33b5",
+                            "label": "Innehåll",
+                            "name": "content",
+                            "type": "repeater",
+                            "instructions": "Om mer än en bild används så blir detta ett bildspel istället",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "row",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_61eaa643e33b6",
+                                    "label": "Rubrik",
+                                    "name": "header",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_61f01c24a5001",
+                                    "label": "Rubrik-tagg",
+                                    "name": "header_tag",
+                                    "type": "radio",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "h1": "H1",
+                                        "h2": "H2",
+                                        "h3": "H3",
+                                        "h4": "H4"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "h2",
+                                    "layout": "horizontal",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_61f01c68a5002",
+                                    "label": "Ingress",
+                                    "name": "preamble",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_61eaa665e33b7",
+                                    "label": "Bild",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_61f006f251e01",
+                                    "label": "QR-image",
+                                    "name": "qr_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_61f00aac6421b",
+                                    "label": "Knapp",
+                                    "name": "button",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Lägg till rad",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643269585
+}
