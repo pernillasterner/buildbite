@@ -16,7 +16,7 @@ $subscriptions = get_sub_field('subscriptions');
                     $notification = $subscription['notification'];
                     $benefits = $subscription['benefits'];
                     $start_trial_btn = $subscription['start_trial-btn'];
-                    $learn_more_btn = $subscription['learn_more_btn'];
+                    $learn_more_btn = $subscription['learn_more-btn'];
                     ?>
                     <div class="col-sm p-5 subscription-item">
                         <div class="row">
