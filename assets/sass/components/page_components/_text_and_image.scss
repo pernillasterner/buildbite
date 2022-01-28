@@ -1,0 +1,50 @@
+.component_text_image {
+
+
+    h2 {
+        color: $brick;
+        margin: 80px 0 50px;
+        max-width: 700px;
+    }
+
+    .container {
+        min-height: 527px;
+        
+        @include media-breakpoint-up(lg) {
+			min-height: 527px;
+		}
+
+        h5 {
+            font-size: $base-font-size * 1;
+        }
+
+        h6 {
+            border: 1px solid #9C9FA3;
+            padding: 1px 7px;
+            border-radius: 3px;
+            color: #9C9FA3;
+        }
+
+        .subheading {
+            border-top: 1px solid $black;
+            width: 80%;
+            padding: 30px 0 20px;
+        }
+
+        .subcontent {
+            width: 80%;
+        }
+
+        .background-col {
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            padding: 0;
+            max-width: 527px;
+        }
+  
+    }
+}

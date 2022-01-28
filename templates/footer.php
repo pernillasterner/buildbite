@@ -29,7 +29,7 @@ if($footer_columns):
                 <p class="copyright">©Buildbite <?php echo date("Y"); ?>  •  All Rights Reserved.</p>
             </div>
             <div class="col-6 text-end">
-                <a class="pl-1 text-decoration-underline" href="<?php echo site_url('/terms-of-service'); ?>" target="_blank" title="Terms of service" rel="nofollow">Terms of service</a>
+                <a class="pl-1 text-decoration-underline" href="<?php echo site_url('/terms-of-use'); ?>" target="_blank" title="Terms of use" rel="nofollow">Terms of Use</a>
                 <a class="pl-1 text-decoration-underline" href="<?php echo site_url('/privacy-policy'); ?>" target="_blank" title="Privacy Policy" rel="nofollow">Privacy Policy</a>
             </div>
         </div>
