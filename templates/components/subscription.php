@@ -1,19 +1,19 @@
 <?php 
-$subscriptions = get_sub_field('subscriptions'); 
+$row = get_sub_field('subscriptions'); 
 ?>
 
 <section class="component component_subscription">
-    <?php if($subscriptions) : ?>
+    <?php if($row) : ?>
         <div class="row justify-content-md-center no-gutters">
-            <?php foreach( $subscriptions as $subscription ) : ?>
+            <?php foreach( $row as $row ) : ?>
                 <?php 
-                $heading = $subscription['heading'];
-                $price = $subscription['price'];
-                $period = $subscription['period'];
-                $notification = $subscription['notification'];
-                $benefits = $subscription['benefits'];
-                $start_trial_btn = $subscription['start_trial-btn'];
-                $learn_more_btn = $subscription['learn_more-btn'];
+                $heading = $row['heading'];
+                $price = $row['price'];
+                $period = $row['period'];
+                $notification = $row['notification'];
+                $benefits = $row['benefits'];
+                $start_trial_btn = $row['start_trial-btn'];
+                $learn_more_btn = $row['learn_more-btn'];
                 ?>
                 <div class="col-sm p-5 subscription-item">
                     <div class="row">
