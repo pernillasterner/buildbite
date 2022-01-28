@@ -30,8 +30,8 @@ $row = get_sub_field('subscriptions');
                         </ul>
                     </div>
                     <div class="row subscribe-links">
-                        <a class="btn btn-primary" href="<?php echo $start_trial_btn['link']; ?>"><?php echo $start_trial_btn['title']; ?></a>
-                        <a href="<?php echo $learn_more_btn['link']; ?>"><h6><?php echo $learn_more_btn['title']; ?> -> </h6></a>
+                        <a class="btn btn-primary" href="<?php echo $start_trial_btn['url']; ?>"><?php echo $start_trial_btn['title']; ?></a>
+                        <a href="<?php echo $learn_more_btn['url']; ?>"><h6><?php echo $learn_more_btn['title']; ?> -> </h6></a>
                     </div>
                 </div>
             <?php endforeach; ?>
