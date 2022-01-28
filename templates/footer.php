@@ -12,7 +12,7 @@ if($footer_columns):
                     <div class="row">
                     <?php 
                         foreach($col as $row): 
-                            if($row['item_tyoe'] === 'title'): 
+                            if($row['item_type'] === 'title'): 
                                 echo $row['title'];
                             elseif($row['item_type'] === 'wysiwyg'):
                                 include(locate_template($prefix.'footer-columns--wysiwyg.php'));
