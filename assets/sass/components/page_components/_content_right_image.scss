@@ -1,0 +1,12 @@
+.component_right_image {
+    padding: 130px 50px 0 50px;
+
+    h1, h2, h3, h4 {
+        color: $brick;
+        padding-bottom: $base-padding * 5;
+    }
+
+    p {
+        padding-bottom: $base-padding * 2;
+    }
+}
