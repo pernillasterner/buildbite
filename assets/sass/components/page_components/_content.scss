@@ -1,0 +1,39 @@
+.component_content {
+	padding-top: 170px;
+	padding-bottom: 65px;
+
+	// @include media-breakpoint-down(lg) {
+	// 	padding-top: 40px;
+	// 	padding-bottom: 40px;
+	// }
+
+	// @include media-breakpoint-down(sm) {
+	// 	padding-top: $component_horizontal_padding;
+	// 	padding-bottom: $component_horizontal_padding;
+	// }
+
+	&.white {
+		background-color: #fff;
+	}
+
+	&.grey {
+		background-color: $sand_02;
+	}
+
+	>.container-fluid {
+		max-width: 843px;
+        margin-top:40px;
+
+		&.h1 {
+			max-width: 1109px;
+			border-bottom: 1px solid $sand_01;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	}
+
+	.breadcrumbs {
+		padding-top: 0;
+		margin-bottom: 10px;
+	}
+}
