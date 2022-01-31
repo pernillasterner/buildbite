@@ -50,7 +50,12 @@
             bottom: 30px;
             flex-wrap: nowrap;
             align-items: baseline;
-            
+            width: 100%;
+
+            .link-learn-more {
+                display: flex;
+                width: fit-content;
+            }
         }
     }
 }
