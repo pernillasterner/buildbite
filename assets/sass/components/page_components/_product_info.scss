@@ -50,21 +50,15 @@
                 p {
                     margin-bottom: $base-margin * 4;
                 }
-                h6 {
+              
+                .subscribe-links {
                     position: absolute;
-                    bottom: $base-padding * 3;
-                    display: flex;
-                    width: fit-content;
-                    
-                    &::after {
-                        content: url("../img/Arrow_black.svg");
-                        padding-left: 8px;
-                    }
-        
+                    bottom: 30px;
+                    flex-wrap: nowrap;
+                    align-items: baseline;
                 }
             }
         }
-
     }
     
     ul.carousel__nav {

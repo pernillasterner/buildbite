@@ -1,7 +1,5 @@
 .btn {
     padding: 8px 0;
-    background: $btn-primary;
-    color: $white;
     padding-left: 16px;
     padding-right: 8px;
     height: 36px;
@@ -10,29 +8,111 @@
     transition-duration: 0.4s;
     font-size: $h6-font-size;
     display: flex;
+    width: fit-content;
+    border: none;
+    
+    &.btn-primary {
+        background: $btn-primary;
+        color: $white;
 
         &::after {
             content: url("../img/Arrow_white.svg");
             padding-left: 8px;
         }
 
-        &.btn-nav {
+        &:hover, &:active {
+            background: $sand_01;
+            color: $dark_green;
+
+            &::after {
+                content: url("../img/Arrow_black.svg");
+                padding-left: 8px;
+            }
+        }
+
+        &:focus {
+            background: $btn-primary;
+            color: $white;
+        }
+
+        &:disabled {
+            background: $btn-primary;
+            color: $white;
+            opacity: 0.3;
+        }
+    }
+        
+    &.btn-nav {
+        background: $btn-nav;
+        color: $black;
+        margin-left: $base-margin * 7;
+
+        &::after {
+            content: url("../img/Arrow_black.svg");
+            padding-left: 8px;
+        }
+
+        &:hover, &:active {
+            background: $sand_01;
+            color: $dark_green;
+        }
+
+        &:focus {
             background: $btn-nav;
             color: $black;
-            margin-left: $base-margin * 7;
-
-            &::after {
-                content: url("../img/Arrow_black.svg");
-            }
         }
 
-        &.btn-hero {
-            background: $white;
+        &:disabled {
+            background: $btn-nav;
+            color: $black;
+            opacity: 0.3;
+        }
+    }
+
+    &.btn-secondary {
+        background: $white;
+        color: $dark_green;
+        
+        &::after {
+            content: url("../img/Arrow_black.svg");
+            padding-left: 8px;
+        }
+
+        &:hover, &:active {
+            background: $sand_01;
             color: $dark_green;
-            max-width: 140px;
-            
-            &::after {
-                content: url("../img/Arrow_black.svg");
-            }
         }
+
+        &:focus {
+            background: $sand_04;
+            color: $dark_green;
+        }
+
+        &:disabled {
+            background: $sand_04;
+            color: $dark_green;
+            opacity: 0.3;
+        }
+    }
+
+    &.btn-link-primary {
+        color: $grey_04;
+
+        &::after {
+            content: url("../img/Arrow_black.svg");
+            padding-left: 8px;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        &:disabled {
+            opacity: 0.3;
+        }
+    }
 }
