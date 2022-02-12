@@ -15,7 +15,7 @@
         <div class="hero_image" style="background-image: <?php echo $linear_gradient; ?>, url('<?php echo (!empty($main_image)) ? $main_image['url'] : ''; ?>')"></div>
 
         <div class="row hero_content">
-            <div class="col-6">
+            <div class="col-lg">
                 <?php if($header) : ?>
                     <?php echo '<' . $header_tag . '>' . $header . '</' . $header_tag . '>'; ?>
                 <?php endif; ?>
@@ -23,12 +23,13 @@
                     <p><?php echo $preamble; ?></p>
                 <?php endif; ?>
                 <?php if($button) : ?>
-                    <a href="<?php echo $button['link']; ?>" class="btn btn-secondary"><?php echo $button['title']; ?></a>
+                    <button id="modul_open_hero" href="<?php echo $button['link']; ?>" class="btn btn-secondary"><?php echo $button['title']; ?></button>
                 <?php endif; ?>
             </div>
-            <div class="col-6">
+            <div class="col-lg">
                 <?php if($qr_image) : ?>
-                    <img title="qr-code" alt="qr-code" src="<?php echo $qr_image['url']; ?>">
+                    <img class="qr-code" title="qr-code" alt="qr-code" src="<?php echo $qr_image['url']; ?>">
+                    <button id="modul_open_hero" href="<?php echo $button['link']; ?>" class="btn btn-secondary btn-download">download the buildbite app</button>
                 <?php endif; ?>
             </div>
         </div>
