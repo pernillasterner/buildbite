@@ -37,6 +37,6 @@
     "cssnano": "^5.0.16",
     "gulp-postcss": "^9.0.1",
     "gulp-terser": "^2.1.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.7"
   }
 }
