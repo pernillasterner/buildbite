@@ -30,8 +30,14 @@ $row = get_sub_field('subscriptions');
                         </ul>
                     </div>
                     <div class="row subscribe-links">
-                        <a class="btn btn-primary" href="<?php echo $start_trial_btn['url']; ?>"><?php echo $start_trial_btn['title']; ?></a>
-                        <a class="btn btn-link-primary" href="<?php echo $learn_more_btn['url']; ?>"><h6><?php echo $learn_more_btn['title']; ?></h6></a>
+                        <?php if($start_trial_btn) : ?>
+                            <a class="btn btn-primary" href="<?php echo $start_trial_btn['url']; ?>"><?php echo $start_trial_btn['title']; ?></a>
+                        <?php endif; ?>
+                        <?php if($learn_more_btn) : ?>
+                            <a class="btn btn-link-primary" href="<?php echo $learn_more_btn['url']; ?>"><h6><?php echo $learn_more_btn['title']; ?></h6></a>
+                            <button id="modul_open" class="btn btn-nav open">get started</button>
+                            <?php get_template_part( 'templates/moduls/futures'); ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             <?php endforeach; ?>

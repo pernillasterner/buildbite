@@ -1,82 +1,88 @@
 .site_header {
-	background: transparent;
-	min-height: 92px;
-	position: fixed;
-	top: 0; left: 0; right: 0;
-	z-index: 88888; // techlove
-	overflow: hidden;
-	transition: height 0.2s;
-	padding-left: 60px;
-	padding-right: 24px;
-	margin: auto;
-	max-width: 1440px;
+  background: transparent;
+  min-height: 92px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 88888; // techlove
+  overflow: hidden;
+  transition: height 0.2s;
+  padding-left: 60px;
+  padding-right: 24px;
+  margin: auto;
+  max-width: 1440px;
 
-	@include media-breakpoint-down(sm) {
-		z-index: 88888; //techlove
-	}
+  @include media-breakpoint-down(sm) {
+    z-index: 88888; //techlove
+  }
 
-	.top_navigation {
-		position: relative;
-		height: 100%;
-		z-index: 100;
-		margin-top: 60px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	
+  .top_navigation {
+    position: relative;
+    height: 100%;
+    z-index: 100;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-		.menu-toppmeny-container {
-			display: flex;
-			align-items: center;
-			background: white;
-			border-radius: 50px;
-			padding: 5px;
-			max-height: 44px;
+    .menu-toppmeny-container {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 50px;
+      padding: 5px;
+      max-height: 44px;
 
-			.navbar-nav {
-				flex-direction: row;
+      .navbar-nav {
+        flex-direction: row;
 
-				>li {
-					padding-left: $base-padding * 1.5;
-				}
-			}
+        > li {
+          padding-left: $base-padding * 1.5;
+        }
+      }
 
-			
-		}
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
 
-		
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
 
+    // .navbar-brand {
+    // 	display: block;
+    // 	float: left;
+    // 	width: 216px;
+    // 	position: absolute;
+    // 	top: 50%;
+    // 	left: 0;
+    // 	transform: translateY(-50%);
+    // 	margin-left: 70px;
 
+    // 	// @include media-breakpoint-down(sm) {
+    // 	// 	width: 168px;
+    // 	// 	margin-left: 15px;
+    // 	// }
 
-		// .navbar-brand {
-		// 	display: block;
-		// 	float: left;
-		// 	width: 216px;
-		// 	position: absolute;
-		// 	top: 50%;
-		// 	left: 0;
-		// 	transform: translateY(-50%);
-		// 	margin-left: 70px;
-		
-		// 	// @include media-breakpoint-down(sm) {
-		// 	// 	width: 168px;
-		// 	// 	margin-left: 15px;
-		// 	// }
-		
-		// 	svg {
-		// 		display: block;
-		// 		.cls-1 {
-		// 			transition: fill 0.2s;
-		// 		}
-		// 	}
-		
-			
-		// }
-	}
+    // 	svg {
+    // 		display: block;
+    // 		.cls-1 {
+    // 			transition: fill 0.2s;
+    // 		}
+    // 	}
+
+    // }
+  }
 }
-
-
-
 
 /*.site_header {
 	background: $white;

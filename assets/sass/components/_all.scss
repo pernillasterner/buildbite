@@ -5,15 +5,15 @@
 
 // base & layout
 @import "content";
-@import 'breakpoints';
+@import "breakpoints";
 
 // compontents (navbar, button, card)
-@import 'menu';
+@import "menu";
 @import "main";
-@import 'footer';
+@import "footer";
 
 // utilities (margin, padding, opacity)
-@import 'utilities';
+@import "utilities";
 @import "buttons";
 
 // page components
@@ -24,3 +24,6 @@
 @import "page_components/content_right_image";
 @import "page_components/product_info";
 @import "page_components/content";
+
+// moduls
+@import "moduls";

@@ -17,13 +17,24 @@ $header_tag = get_sub_field('header_tag');
                     $icon = $row['icon'];
                     $subheader = $row['subheader'];
                     $content = $row['content'];
+                    $link = $row['link'];
                     ?>
                     <div class="col col-sm bg-white carousel__slide">
                         <img title="icon" alt="icon" src="<?php echo $icon['url']; ?>">
                         <h3> <?php echo $i . '. ' . $subheader; ?></h3>
                         <p><?php echo $content; ?></p>
                         <div class="row subscribe-links">
-                            <a class="btn btn-link-primary" href=""><h6>learn more</h6></a>
+                            <?php if($link) : ?>
+                                <?php 
+                                // echo $link['url'];
+                                // echo $link['title'];
+                                ?>
+                            <a class="btn btn-link-primary open" href="<?php echo $link['url']; ?>"><h6>learn more</h6></a>
+                            <!-- <button id="modul_open" class="btn btn-nav open">learn more</button> -->
+                            <?php //get_template_part( 'templates/moduls/features'); ?>
+                            <button id="modul_open" class="btn btn-nav open">get started</button>
+                            <?php get_template_part( 'templates/moduls/futures'); ?>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php $i++; ?>
