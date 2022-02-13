@@ -1,28 +1,40 @@
 #{headings(1,6)} {
-    font-family: $space_grotesk;
-    font-weight: normal;
+  font-family: $space_grotesk;
+  font-weight: normal;
 }
 
-h1, .h1, p.h1  {
-    @include h1;
+h1,
+.h1,
+p.h1 {
+  @include h1;
 }
 
-h2, .h2, p.h2 {
-    @include h2;
+h2,
+.h2,
+p.h2 {
+  @include h2;
 }
 
-h3, .h3, p.h3 {
-    @include h3;
+h3,
+.h3,
+p.h3 {
+  @include h3;
 }
 
-h4, .h4, p.h4 {
-    @include h4;
+h4,
+.h4,
+p.h4 {
+  @include h4;
 }
 
-h5, .h5, p.h5 {
-    @include h5;
+h5,
+.h5,
+p.h5 {
+  @include h5;
 }
 
-h6, .h6, p.h6 {
-    @include h6;
+h6,
+.h6,
+p.h6 {
+  @include h6;
 }

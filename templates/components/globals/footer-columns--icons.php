@@ -2,7 +2,7 @@
 $footer_icons = $row['icons'];
 if($footer_icons) :
 ?>
-<div class="col-6">
+<div class="col-md-6 col-12 social-icons">
     <ul>
         <?php foreach($footer_icons as $icon) : ?>
             <?php if( get_field($icon['icon'], 'option') ) : ?>

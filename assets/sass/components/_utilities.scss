@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 $utilities: (
   "padding": (
@@ -9,7 +9,9 @@ $utilities: (
       "2": $base-padding * 2,
       "3": $base-padding * 4,
       "4": $base-padding * 6,
-      "5": $base-padding * 8
+      "5": $base-padding * 8,
+      "6": $base-padding * 10,
+      "7": $base-padding * 12,
     ),
   ),
   "padding-left": (
@@ -20,7 +22,7 @@ $utilities: (
       "2": $base-padding * 2,
       "3": $base-padding * 4,
       "4": $base-padding * 6,
-      "5": $base-padding * 8
+      "5": $base-padding * 8,
     ),
   ),
   "padding-right": (
@@ -31,7 +33,7 @@ $utilities: (
       "2": $base-padding * 2,
       "3": $base-padding * 4,
       "4": $base-padding * 6,
-      "5": $base-padding * 8
+      "5": $base-padding * 8,
     ),
   ),
   "padding-top": (
@@ -42,7 +44,9 @@ $utilities: (
       "2": $base-padding * 2,
       "3": $base-padding * 4,
       "4": $base-padding * 6,
-      "5": $base-padding * 8
+      "5": $base-padding * 8,
+      "6": $base-padding * 10,
+      "7": $base-padding * 12,
     ),
   ),
   "padding-bottom": (
@@ -54,7 +58,7 @@ $utilities: (
       "3": $base-padding * 4,
       "4": $base-padding * 6,
       "5": $base-padding * 8,
-      "6": $base-padding * 10
+      "6": $base-padding * 10,
     ),
   ),
   "margin": (
@@ -65,7 +69,7 @@ $utilities: (
       "2": $base-margin * 2,
       "3": $base-margin * 4,
       "4": $base-margin * 6,
-      "5": $base-margin * 8
+      "5": $base-margin * 8,
     ),
   ),
   "margin-left": (
@@ -76,7 +80,7 @@ $utilities: (
       "2": $base-margin * 2,
       "3": $base-margin * 4,
       "4": $base-margin * 6,
-      "5": $base-margin * 8
+      "5": $base-margin * 8,
     ),
   ),
   "margin-right": (
@@ -87,7 +91,7 @@ $utilities: (
       "2": $base-margin * 2,
       "3": $base-margin * 4,
       "4": $base-margin * 6,
-      "5": $base-margin * 8
+      "5": $base-margin * 8,
     ),
   ),
   "margin-top": (
@@ -98,7 +102,7 @@ $utilities: (
       "2": $base-margin * 2,
       "3": $base-margin * 4,
       "4": $base-margin * 6,
-      "5": $base-margin * 8
+      "5": $base-margin * 8,
     ),
   ),
   "margin-bottom": (
@@ -109,10 +113,11 @@ $utilities: (
       "2": $base-margin * 2,
       "3": $base-margin * 4,
       "4": $base-margin * 6,
-      "5": $base-margin * 8
+      "5": $base-margin * 8,
+      "6": $base-margin * 9,
+      "7": $base-margin * 10,
     ),
   ),
-
   "opacity": (
     "prefix": "o",
     "values": (
@@ -137,7 +142,7 @@ $utilities: (
       "sm": math.div($base-border-radius, 2),
       "lg": $base-border-radius * 2,
       "full": 50%,
-    )
+    ),
   ),
   "display": (
     "prefix": "display",
@@ -146,8 +151,8 @@ $utilities: (
       "b": block,
       "f": flex,
       "i": inline,
-      "i-b": inline-block
-    )
+      "i-b": inline-block,
+    ),
   ),
   // "font-size": (
   //   "prefix": "font",
@@ -158,7 +163,7 @@ $utilities: (
   //     "xl": $font-size-xl,
   //     "xxl": $font-size-xxl
   //   )
-  // )
+  // ),,,,,,,
 );
 
 // generate utility classes
@@ -167,12 +172,12 @@ $utilities: (
   $values: map-get($map, "values");
 
   @each $k, $v in $values {
-    @if($k == "default") {
+    @if ($k == "default") {
       .#{$prefix} {
         #{$property}: $v;
       }
     } @else {
-      .#{$prefix}-#{$k}{
+      .#{$prefix}-#{$k} {
         #{$property}: $v;
       }
     }
