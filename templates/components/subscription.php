@@ -35,8 +35,6 @@ $row = get_sub_field('subscriptions');
                         <?php endif; ?>
                         <?php if($learn_more_btn) : ?>
                             <a class="btn btn-link-primary" href="<?php echo $learn_more_btn['url']; ?>"><h6><?php echo $learn_more_btn['title']; ?></h6></a>
-                            <button id="modul_open" class="btn btn-nav open">get started</button>
-                            <?php get_template_part( 'templates/moduls/futures'); ?>
                         <?php endif; ?>
                     </div>
                 </div>

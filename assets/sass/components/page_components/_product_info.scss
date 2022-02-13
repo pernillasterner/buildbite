@@ -1,81 +1,97 @@
 .component_product_info {
-    background: $sand_02;
-    padding: $base-padding * 12;
-    padding-left: $base-padding * 2;
-    padding-right: 0;
-    color: $grey_01;
-    overflow: hidden;
+  background: $sand_02;
+  padding: $base-padding * 12;
+  padding-left: $base-padding * 2;
+  padding-right: 0;
+  color: $grey_01;
+  overflow: hidden;
+  @include media-breakpoint-down(sm) {
+    padding: ($base-padding * 6) 0;
+  }
 
-    h1, h2, h3, h4 {
-        color: $brick;
-        padding: 0;
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $brick;
+    padding: 0;
+  }
+
+  span.carousel__button {
+    margin: $base-margin * 2 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+
+    &.carousel__button--left {
+      content: url("../img/Carousel_Arrow_Left.svg");
     }
 
-    span.carousel__button {
-        margin: $base-margin * 2 0;
-        padding: 0;
-        width: 25px;
-        height: 25px;
+    &.carousel__button--right {
+      content: url("../img/Carousel_Arrow_Right.svg");
+    }
+  }
 
-        &.carousel__button--left {
-            content: url("../img/Carousel_Arrow_Left.svg");
+  .carousel__track-container {
+    margin-left: 30px;
+    @include media-breakpoint-down(sm) {
+      margin: 20px;
+    }
+    .slider-row {
+      position: relative;
+      min-height: 300px;
+      transition: transform 700ms ease-in;
+      margin-left: 2px;
+
+      .col {
+        padding: $base-padding * 3;
+        border-radius: 3px;
+        position: absolute;
+        width: 424px;
+
+        @include media-breakpoint-down(sm) {
+          padding: $base-padding * 1;
         }
 
-        &.carousel__button--right {
-            content: url("../img/Carousel_Arrow_Right.svg");
-          
+        h3 {
+          color: $grey_01;
+          padding: ($base-padding * 2) 0 ($base-padding * 1);
         }
+
+        p {
+          margin-bottom: $base-margin * 4;
+        }
+
+        .subscribe-links {
+          position: absolute;
+          bottom: 30px;
+          flex-wrap: nowrap;
+          align-items: baseline;
+        }
+      }
+    }
+  }
+
+  ul.carousel__nav {
+    padding-left: 0;
+    margin-top: $base-margin * 3;
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
     }
 
-    .carousel__track-container {
-        margin-left: 30px;
-
-        .slider-row {
-            position: relative;
-            min-height: 300px;
-            transition: transform 700ms ease-in;
-            margin-left: 2px;
-    
-            .col {
-                padding: $base-padding * 3;
-                border-radius: 3px;
-                position: absolute;
-                width: 424px;
-               
-                h3 {
-                    color: $grey_01;
-                    padding: ($base-padding * 2) 0 ($base-padding * 1);
-                }
-        
-                p {
-                    margin-bottom: $base-margin * 4;
-                }
-              
-                .subscribe-links {
-                    position: absolute;
-                    bottom: 30px;
-                    flex-wrap: nowrap;
-                    align-items: baseline;
-                }
-            }
-        }
+    li.carousel__indicator {
+      float: left;
+      height: 5px;
+      width: 30px;
+      background: $grey_08;
+      border-radius: 3px;
+      margin-right: 5px;
+      @include media-breakpoint-down(sm) {
+        width: 20px;
+      }
+      &.current-slide {
+        background: $red_accent;
+      }
     }
-    
-    ul.carousel__nav {
-        padding-left: 0;
-        margin-top: $base-margin * 3;
-
-        li.carousel__indicator {
-            float: left;
-            height: 5px;
-            width: 30px;
-            background: $grey_08;
-            border-radius: 3px;
-            margin-right: 5px;
-
-            &.current-slide {
-                background: $red_accent;
-            }
-        }
-    }
+  }
 }
