@@ -2,25 +2,11 @@
   position: relative;
   padding: 10px;
 
-  //   &.small .hero_image {
-  //     min-height: 472px;
-
-  //     @include media-breakpoint-down(sm) {
-  //       min-height: 260px;
-  //     }
-  //   }
-
-  //   &.extra-small .hero_image {
-  //     min-height: 229px;
-
-  //     @include media-breakpoint-down(sm) {
-  //       min-height: 229px;
-  //     }
-  //   }
-
   &.big .hero_image {
-    min-height: 750px;
-
+    min-height: 730px;
+    @include media-breakpoint-up(xxl) {
+      min-height: 843px;
+    }
     @include media-breakpoint-down(md) {
       min-height: 1154px;
     }
@@ -38,11 +24,6 @@
     background-position: center center;
     background-size: cover;
     border-radius: 6px;
-
-    @include media-breakpoint-down(lg) {
-      // padding-top: $component_horizontal_padding;
-      // padding-bottom: $component_horizontal_padding;
-    }
   }
 
   .hero_content {
@@ -51,14 +32,13 @@
     color: white;
     padding-left: $base-padding * 1;
     border-left: 1px solid $white;
-    // width: 100%;
     max-width: 1440px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(xxl) {
       margin-left: $base-margin * 4;
       margin-right: $base-margin * 4;
     }
@@ -73,8 +53,6 @@
     }
 
     div:first-child {
-      //   text-align: start;
-      //   border-left: 1px solid $white;
       h2,
       h3,
       h4,
@@ -98,26 +76,29 @@
       }
     }
 
-    img.qr-code {
+    div:last-child {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
       align-items: flex-end;
+      margin-top: $base-margin * 2;
 
       @include media-breakpoint-down(md) {
         justify-content: flex-start;
         margin-top: $base-margin * 2;
       }
-      @include media-breakpoint-down(sm) {
-        display: none;
+      .qr-code {
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
       }
-    }
-    .btn-download {
-      display: none;
-      @include media-breakpoint-down(sm) {
-        display: block;
-        margin-top: $base-margin * 3;
-        display: flex;
+      .btn-download {
+        display: none;
+        @include media-breakpoint-down(sm) {
+          display: block;
+          margin-top: $base-margin * 3;
+          display: flex;
+        }
       }
     }
   }
