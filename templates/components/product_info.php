@@ -32,8 +32,8 @@ $header_tag = get_sub_field('header_tag');
                             <a class="btn btn-link-primary open" href="<?php echo $link['url']; ?>"><h6>learn more</h6></a>
                             <!-- <button id="modul_open" class="btn btn-nav open">learn more</button> -->
                             <?php //get_template_part( 'templates/moduls/features'); ?>
-                            <button id="modul_open" class="btn btn-nav open">get started</button>
-                            <?php get_template_part( 'templates/moduls/futures'); ?>
+                            <!-- <button id="modul_open" class="btn btn-nav open">get started</button> -->
+                            <?php //get_template_part( 'templates/moduls/futures'); ?>
                             <?php endif; ?>
                         </div>
                     </div>
