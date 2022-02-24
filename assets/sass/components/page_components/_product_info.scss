@@ -22,6 +22,7 @@
     padding: 0;
     width: 25px;
     height: 25px;
+    cursor: pointer;
 
     &.carousel__button--left {
       content: url("../img/Carousel_Arrow_Left.svg");
