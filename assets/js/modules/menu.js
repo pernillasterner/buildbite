@@ -7,19 +7,10 @@ const MENU = (function () {
     const sectionOne = document.querySelector('.component_hero');
     const main_navbar = document.querySelector('.main_logo');
     const scrolled_navbar = document.querySelector('.scrolled_logo');
-
-    
-    // function addHandler() {
-    //     menu_btn.classList.toggle('is-active');
-    //     menu_nav.classList.toggle('is-active');
-
-    // }
-
-    // function addListeners() {
-    //     menu_btn.addEventListener('click', addHandler)
-    // }
-    
+    console.log(menu_btn);
+   
     const addHandler = () => {
+        console.log('testing');
         menu_btn.classList.toggle('is-active')
         menu_nav.classList.toggle('is-active')
     }
@@ -29,7 +20,7 @@ const MENU = (function () {
     }
 
 
-
+    
     const sectionOneOptions = {
         rootMargin: "-500px 0px 0px 0px"
     };
