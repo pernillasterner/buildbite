@@ -4,7 +4,7 @@ $header = get_sub_field('header');
 $header_tag = get_sub_field('header_tag');
 ?>
 
-<section class="component component_product_info carousel">
+<section id="features" class="component component_product_info carousel">
     <?php if($rows) : ?>
         <div class="row carousel__track-container no-gutters">
             <?php echo '<' . $header_tag . '>' . $header . '</' . $header_tag . '>'; ?>
@@ -29,11 +29,7 @@ $header_tag = get_sub_field('header_tag');
                                 // echo $link['url'];
                                 // echo $link['title'];
                                 ?>
-                            <a class="btn btn-link-primary open" href="<?php echo $link['url']; ?>"><h6>learn more</h6></a>
-                            <!-- <button id="modul_open" class="btn btn-nav open">learn more</button> -->
-                            <?php //get_template_part( 'templates/moduls/features'); ?>
-                            <!-- <button id="modul_open" class="btn btn-nav open">get started</button> -->
-                            <?php //get_template_part( 'templates/moduls/futures'); ?>
+                            <a class="btn btn-link-primary open-features" href="<?php echo $link['url']; ?>"><h6>learn more</h6></a>                   
                             <?php endif; ?>
                         </div>
                     </div>

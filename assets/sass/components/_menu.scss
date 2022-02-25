@@ -5,27 +5,44 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 88888; // techlove
+  z-index: 77777; // techlove
   overflow: hidden;
   transition: height 0.2s;
-  padding-left: 60px;
-  padding-right: 24px;
-  margin: auto;
-  max-width: 1440px;
 
-  @include media-breakpoint-down(sm) {
-    z-index: 88888; //techlove
+  &.bgcolor-scrolled {
+    background-color: $sand_04;
+    transition: 0.6s ease;
   }
-
+  @include media-breakpoint-down(sm) {
+    z-index: 77777; //techlove
+  }
+  @media (max-width: 740px) {
+    min-height: 68px;
+  }
+  .navbar_brand-mobile {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    @media (min-width: 740px) {
+      display: none;
+    }
+  }
   .top_navigation {
     position: relative;
     height: 100%;
     z-index: 100;
-    margin-top: 60px;
+    padding: 20px 24px 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    max-width: 1440px;
+    margin: auto;
+    @media (max-width: 740px) {
+      display: none;
+    }
+    .scrolled_logo {
+      display: none;
+    }
     .menu-toppmeny-container {
       display: flex;
       align-items: center;
@@ -40,8 +57,15 @@
         > li {
           padding-left: $base-padding * 1.5;
         }
+        button {
+          width: 500px;
+        }
       }
-
+      .btn-nav {
+        @include media-breakpoint-down(md) {
+          margin-left: $base-margin * 2;
+        }
+      }
       /* The Close Button */
       .close {
         color: #aaa;
@@ -57,30 +81,118 @@
         cursor: pointer;
       }
     }
+  }
+  .mobile_header {
+    display: none;
+    @media (max-width: 740px) {
+      display: block;
+      background-color: $sand_04;
+      min-height: 68px;
+      padding: 15px;
+      .btn_get-started-mobile {
+        float: right;
+        margin: 0;
+        margin-right: 65px;
+        display: flex;
+        @include media-breakpoint-down(sm) {
+          margin-right: 40px;
+        }
+      }
+      .navbar_close {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        display: block;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 0 10px;
+        z-index: 999999;
 
-    // .navbar-brand {
-    // 	display: block;
-    // 	float: left;
-    // 	width: 216px;
-    // 	position: absolute;
-    // 	top: 50%;
-    // 	left: 0;
-    // 	transform: translateY(-50%);
-    // 	margin-left: 70px;
+        appearance: none;
+        background: $white;
+        outline: none;
+        border: none;
 
-    // 	// @include media-breakpoint-down(sm) {
-    // 	// 	width: 168px;
-    // 	// 	margin-left: 15px;
-    // 	// }
+        .bar,
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $black;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+        &.is-active:before {
+          transform: rotate(-45deg) translate(-5px, 5px);
+        }
+        &.is-active:after {
+          transform: rotate(45deg) translate(-5px, -5px);
+        }
+        &.is-active .bar {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .main_navigation {
+    display: none;
+    @media (max-width: 740px) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      right: 100%;
+      bottom: 0;
+      position: fixed;
+      transition: 0.6s;
+    }
+    &.is-active {
+      left: 0;
+      backdrop-filter: blur(5px);
+    }
+    nav {
+      background-color: $sand_04;
+      width: 299px;
+      height: 100%;
+      padding: $base-padding * 1;
+      padding-bottom: $base-padding * 7;
+      padding-top: $base-padding * 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo {
+        max-width: 50%;
+      }
+      .navbar-nav {
+        padding-top: $base-padding * 4;
+        li {
+          border-top: 1px solid #afb3b7;
+          padding: ($base-padding * 2) 0;
+          a {
+            display: flex;
+            font-size: $base-font-size * 1.2;
+            &::before {
+              content: url("../img/Arrow_red.svg");
+              margin-right: 10px;
+            }
+          }
+        }
+      }
 
-    // 	svg {
-    // 		display: block;
-    // 		.cls-1 {
-    // 			transition: fill 0.2s;
-    // 		}
-    // 	}
-
-    // }
+      .nav-footer {
+        border-top: 1px solid #afb3b7;
+        p {
+          padding: $base-padding * 2 0;
+        }
+        .btn-download {
+          margin: 0;
+        }
+      }
+    }
   }
 }
 

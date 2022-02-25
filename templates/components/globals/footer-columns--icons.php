@@ -19,7 +19,7 @@ if($footer_icons) :
                             echo '<a class="pl-1" href="'. $icon['link'] .'" target=”_blank” rel=”nofollow”><img title="instagram" alt="instagram" src="' . get_template_directory_uri() .'/assets/img/Instagram.svg"></a>';
                             break;
                         case "facebook";
-                            echo '<a class="pl-1" href="'. $icon['link'] .'" target=”_blank” rel=”nofollow”><img title="facebook" alt="facebook" src="' . get_template_directory_uri() .'/assets/img/Instagram.svg"></a>';
+                            echo '<a class="pl-1" href="'. $icon['link'] .'" target=”_blank” rel=”nofollow”><img title="facebook" alt="facebook" src="' . get_template_directory_uri() .'/assets/img/Facebook.svg"></a>';
                             break;
                     }
                     ?>
