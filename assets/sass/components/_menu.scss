@@ -13,12 +13,11 @@
     background-color: $sand_04;
     transition: 0.6s ease;
   }
-
   @include media-breakpoint-down(sm) {
     z-index: 77777; //techlove
   }
   @media (max-width: 740px) {
-    padding: 0 60px;
+    min-height: 68px;
   }
   .navbar_brand-mobile {
     position: fixed;
@@ -83,44 +82,59 @@
       }
     }
   }
-  .navbar_close {
+  .mobile_header {
     display: none;
     @media (max-width: 740px) {
-      position: fixed;
-      right: 25px;
-      top: 25px;
       display: block;
-      width: 45px;
-      height: 45px;
-      cursor: pointer;
-      border-radius: 50%;
-      padding: 0 10px;
-      z-index: 999999;
-
-      appearance: none;
-      background: $white;
-      outline: none;
-      border: none;
-
-      .bar,
-      &::after,
-      &::before {
-        content: "";
+      background-color: $sand_04;
+      min-height: 68px;
+      padding: 15px;
+      .btn_get-started-mobile {
+        float: right;
+        margin: 0;
+        margin-right: 65px;
+        display: flex;
+        @include media-breakpoint-down(sm) {
+          margin-right: 40px;
+        }
+      }
+      .navbar_close {
+        position: fixed;
+        right: 15px;
+        top: 15px;
         display: block;
-        width: 100%;
-        height: 1px;
-        background-color: $black;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-      &.is-active:before {
-        transform: rotate(-45deg) translate(-5px, 5px);
-      }
-      &.is-active:after {
-        transform: rotate(45deg) translate(-5px, -5px);
-      }
-      &.is-active .bar {
-        opacity: 0;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 0 10px;
+        z-index: 999999;
+
+        appearance: none;
+        background: $white;
+        outline: none;
+        border: none;
+
+        .bar,
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: $black;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+        &.is-active:before {
+          transform: rotate(-45deg) translate(-5px, 5px);
+        }
+        &.is-active:after {
+          transform: rotate(45deg) translate(-5px, -5px);
+        }
+        &.is-active .bar {
+          opacity: 0;
+        }
       }
     }
   }
