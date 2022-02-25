@@ -7,10 +7,9 @@ const MENU = (function () {
     const sectionOne = document.querySelector('.component_hero');
     const main_navbar = document.querySelector('.main_logo');
     const scrolled_navbar = document.querySelector('.scrolled_logo');
-    console.log(menu_btn);
+
    
     const addHandler = () => {
-        console.log('testing');
         menu_btn.classList.toggle('is-active')
         menu_nav.classList.toggle('is-active')
     }
