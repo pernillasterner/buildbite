@@ -26,7 +26,7 @@ if($footer_columns):
         </div>
         <div class="row terms-info">
             <div class="col-sm-6 col-12">
-                <p class="copyright">©Buildbite <?php echo date("Y"); ?>  •  All Rights Reserved.</p>
+                <p class="copyright">© Buildbite <?php echo date("Y"); ?>   •   All Rights Reserved.</p>
             </div>
             <div class="col-sm-6 col-12 text-end">
                 <a class="pl-1 text-decoration-underline" href="<?php echo site_url('/terms-of-use'); ?>" target="_blank" title="Terms of use" rel="nofollow">Terms of Use</a>
