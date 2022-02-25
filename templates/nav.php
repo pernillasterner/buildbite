@@ -15,18 +15,15 @@
             
             ?>
             <button class="btn btn-nav open">get started</button>
-
         </div>
     </nav>
     
     <div class="mobile_header">
     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
-                <button class="btn btn-nav btn_get-started-mobile open">get started</button>
-
+        <button class="btn btn-nav btn_get-started-mobile open">get started</button>
         <button class="navbar_close" title="">
             <div class="bar"></div>
         </button>
-
     </div>
           
     <div class="main_navigation">
@@ -49,5 +46,4 @@
             </div>
         </nav>
     </div>
-
 </header>
