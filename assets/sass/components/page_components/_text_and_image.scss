@@ -70,9 +70,9 @@
           transition: opacity 2s ease;
         }
       }
-      @include media-breakpoint-down(lg) {
-        display: none;
-      }
+    }
+    @include media-breakpoint-down(lg) {
+      display: none;
     }
   }
 
