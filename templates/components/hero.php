@@ -23,13 +23,12 @@
                     <p><?php echo $preamble; ?></p>
                 <?php endif; ?>
                 <?php if($button) : ?>
-                    <button id="modul_open_hero" href="<?php echo $button['link']; ?>" class="btn btn-secondary"><?php echo $button['title']; ?></button>
+                    <button class="btn btn-secondary open"><?php echo $button['title']; ?></button>
                 <?php endif; ?>
             </div>
             <div class="col-md">
                 <?php if($qr_image) : ?>
                     <img class="qr-code" title="qr-code" alt="qr-code" src="<?php echo $qr_image['url']; ?>">
-                    <button id="modul_open_hero" href="<?php echo $button['link']; ?>" class="btn btn-secondary btn-download">download the buildbite app</button>
                 <?php endif; ?>
             </div>
         </div>

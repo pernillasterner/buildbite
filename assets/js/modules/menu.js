@@ -45,7 +45,10 @@ const MENU = (function () {
     }, 
     sectionOneOptions);
 
-    sectionOneObserver.observe(sectionOne);
+    if(sectionOne) {
+        sectionOneObserver.observe(sectionOne);
+    }
+    
 
    return { addListeners }
 })();
