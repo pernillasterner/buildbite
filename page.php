@@ -24,13 +24,14 @@
                             $name = get_the_title($layout);
                             $slug = sanitize_title($name);
                             get_template_part( 'templates/components/globals/' . $slug );
-                        else :
+                        else : 
                             get_template_part( 'templates/components/' . get_row_layout() );
                         endif;
                     ?>
                 <?php endwhile; ?>
             <?php endif; ?>
         <?php endwhile; ?>
+        <?php get_template_part( 'templates/moduls/get_started_modul'); ?>
     </article>
 </main><!-- /#main -->
 
