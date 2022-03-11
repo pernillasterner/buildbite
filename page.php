@@ -26,12 +26,12 @@
                             get_template_part( 'templates/components/globals/' . $slug );
                         else : 
                             get_template_part( 'templates/components/' . get_row_layout() );
+                            include_once 'templates/moduls/get_started_modul.php';
                         endif;
                     ?>
                 <?php endwhile; ?>
             <?php endif; ?>
         <?php endwhile; ?>
-        <?php get_template_part( 'templates/moduls/get_started_modul'); ?>
     </article>
 </main><!-- /#main -->
 
