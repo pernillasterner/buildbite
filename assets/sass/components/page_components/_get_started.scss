@@ -2,12 +2,15 @@
   background: $dark_blue;
   color: $white;
   padding: ($base-padding * 12) ($base-padding * 4);
+  .row {
+    max-width: 1400px;
+    margin: auto;
+    .col {
+      padding-top: $base-padding * 8;
 
-  .col {
-    padding-top: $base-padding * 8;
-
-    h3 {
-      padding: ($base-padding * 2) 0 ($base-padding * 1);
+      h3 {
+        padding: ($base-padding * 2) 0 ($base-padding * 1);
+      }
     }
   }
 }
