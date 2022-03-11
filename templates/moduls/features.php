@@ -21,13 +21,13 @@ endif;
                 <img title="<?php echo $icon['title']; ?>" alt="<?php echo $icon['title']; ?>" src="<?php echo $icon['url']; ?>">
                 <h4><?php echo $title; ?></h4>
             </div>
-            <a class="close" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
+            <a class="close" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
             <div class="row"> 
                 <button class="btn btn-secondary open"><?php echo $get_started; ?></button>
             </div>
         </div>
         <div class="col-12 col-md-8 modul-right">
-            <a class="close" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
+            <a class="close" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
            <div class="col">
                 <h2><?php echo $content; ?></h2>
                 <?php if($list_items) : ?>
@@ -42,4 +42,3 @@ endif;
         </div>
     </div>
 </section>
-<?php get_template_part( 'templates/moduls/get_started_modul'); ?>
