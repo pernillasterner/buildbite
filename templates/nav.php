@@ -1,5 +1,16 @@
 <header class="site_header bg-color">
 
+<?php 
+$lang = get_language_attributes();
+if(strpos($lang, 'sv-SE')) : 
+    $get_started = 'kom igång';
+elseif(strpos($lang, 'fi')) :
+    $get_started = 'aloita nyt';
+else :
+    $get_started = 'get started';
+endif;
+?>
+
     <nav class="top_navigation">
         <?php get_theme_logo(); ?>
 
@@ -14,13 +25,19 @@
             wp_nav_menu( $args );
             
             ?>
-            <button class="btn btn-nav open">get started</button>
+            
+            <select name="lang" id="lang">
+                <option value="sv">SV</option>
+                <option value="fi">FI</option>
+            </select>
+
+            <button class="btn btn-nav open"><?php echo $get_started; ?></button>
         </div>
     </nav>
     
     <div class="mobile_header">
     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
-        <button class="btn btn-nav btn_get-started-mobile open">get started</button>
+        <button class="btn btn-nav btn_get-started-mobile open"><?php echo $get_started; ?></button>
         <button class="navbar_close" title="">
             <div class="bar"></div>
         </button>

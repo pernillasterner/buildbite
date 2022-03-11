@@ -4,6 +4,17 @@ $header = get_sub_field('header');
 $header_tag = get_sub_field('header_tag');
 ?>
 
+<?php 
+$lang = get_language_attributes();
+if(strpos($lang, 'sv-SE')) : 
+    $learn_more = 'lär dig mer';
+elseif(strpos($lang, 'fi')) :
+    $learn_more = 'lue lisää';
+else :
+    $learn_more = 'learn more';
+endif;
+?>
+
 <section id="features" class="component component_product_info carousel">
     <?php if($rows) : ?>
         <div class="row carousel__track-container no-gutters">
@@ -25,11 +36,7 @@ $header_tag = get_sub_field('header_tag');
                         <p><?php echo $content; ?></p>
                         <div class="row subscribe-links">
                             <?php if($link) : ?>
-                                <?php 
-                                // echo $link['url'];
-                                // echo $link['title'];
-                                ?>
-                            <a class="btn btn-link-primary open-features" href="<?php echo $link['url']; ?>"><h6>learn more</h6></a>                   
+                            <a class="btn btn-link-primary open-features" href="<?php echo $link['url']; ?>"><h6><?php echo $learn_more; ?></h6></a>                   
                             <?php endif; ?>
                         </div>
                     </div>

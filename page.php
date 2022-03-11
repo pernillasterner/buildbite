@@ -24,8 +24,9 @@
                             $name = get_the_title($layout);
                             $slug = sanitize_title($name);
                             get_template_part( 'templates/components/globals/' . $slug );
-                        else :
+                        else : 
                             get_template_part( 'templates/components/' . get_row_layout() );
+                            include_once 'templates/moduls/get_started_modul.php';
                         endif;
                     ?>
                 <?php endwhile; ?>

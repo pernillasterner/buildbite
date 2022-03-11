@@ -15,7 +15,7 @@ $header_tag = get_sub_field('header_tag');
                 $subheader = $row['subheader'];
                 $content = $row['content'];
                 ?>
-                <div class="col col-sm">
+                <div class="col-lg-3 col-sm-12 py-5">
                     <img title="icon" alt="icon" src="<?php echo $icon['url']; ?>">
                     <h3> <?php echo $i . '. ' . $subheader; ?></h3>
                     <p><?php echo $content; ?></p>
