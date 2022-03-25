@@ -23,7 +23,7 @@
                     <p><?php echo $preamble; ?></p>
                 <?php endif; ?>
                 <?php if($button) : ?>
-                    <a href="<?php echo $button['url']; ?>" class="btn btn-nav open"><?php echo $button['title']; ?></a>
+                    <a href="<?php echo $button['url']; ?>" class="btn btn-nav"><?php echo $button['title']; ?></a>
                 <?php endif; ?>
             </div>
             <div class="col-md">
