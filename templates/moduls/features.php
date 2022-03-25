@@ -23,7 +23,7 @@ endif;
             </div>
             <a class="close" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
             <div class="row"> 
-                <button class="btn btn-secondary open"><?php echo $get_started; ?></button>
+                <a href="<?php echo site_url('/moduls/get-started'); ?>" class="btn btn-secondary"><?php echo $get_started; ?></a>
             </div>
         </div>
         <div class="col-12 col-md-8 modul-right">
