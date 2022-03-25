@@ -26,18 +26,13 @@ endif;
             
             ?>
             
-            <select name="lang" id="lang">
-                <option value="sv">SV</option>
-                <option value="fi">FI</option>
-            </select>
-
-            <button class="btn btn-nav open"><?php echo $get_started; ?></button>
+            <a href="<?php echo site_url('moduls/get-started'); ?>" class="btn btn-nav btn_get-started-mobile"><?php echo $get_started; ?></a>
         </div>
     </nav>
     
     <div class="mobile_header">
     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
-        <button class="btn btn-nav btn_get-started-mobile open"><?php echo $get_started; ?></button>
+        <a href="<?php echo site_url('moduls/get-started'); ?>" class="btn btn-nav btn_get-started-mobile"><?php echo $get_started; ?></a>
         <button class="navbar_close" title="">
             <div class="bar"></div>
         </button>
