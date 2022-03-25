@@ -40,8 +40,8 @@ endif;
 
 <section id="modul_get-started" class="modul modul_get-started">
     <div class="row modul-content">
-        <div class="col-4 modul-left">
-            <div class="row-auto pt-6">
+        <div class="col-12 col-md-4 modul-left">
+            <div class="row-auto pt-5">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Vector.svg" alt="">
                 <h4><?php echo $header; ?></h4>
                 <ul class="d-flex justify-content-start flex-wrap flex-column">
@@ -50,13 +50,14 @@ endif;
                     <li>3. <?php echo $li_3; ?></li>
                 </ul>
             </div>
+            <a class="close" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
             <div class="row contact-info">
                 <p><?php echo $questions; ?></p>
                 <a href="<?php echo site_url(''); ?>"><?php echo $contact; ?></a>
             </div>
 
         </div>
-        <div class="col-8 modul-right">
+        <div class="col-12 col-md-8 modul-right">
             <a class="close" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
            <div class="row text-center">
                <h2><?php echo $big_header; ?></h2>
