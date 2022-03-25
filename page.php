@@ -30,7 +30,6 @@
                 <?php endwhile; ?>
             <?php endif; ?> 
         <?php endwhile; ?>
-        <?php get_template_part( 'templates/moduls/get_started.php' ); ?>
     </article>
 </main><!-- /#main -->
 
