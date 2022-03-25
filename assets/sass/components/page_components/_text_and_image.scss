@@ -3,19 +3,19 @@
   &.desktop {
     max-width: 1440px;
     margin: auto;
-    padding: ($base-padding * 8) 10px;
+    padding: ($base-padding * 8) 0;
     position: relative;
+    padding-left: 40px;
+
+    h2 {
+      color: $brick;
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
 
     .row.first {
-      padding-left: 40px;
       .col.left {
         height: auto;
-
-        h2 {
-          color: $brick;
-          max-width: 700px;
-          margin-bottom: 50px;
-        }
 
         .container_content {
           display: flex;
