@@ -29,13 +29,13 @@ $row = get_sub_field('main_content');
                 <?php 
                 $header = $row['header']; 
                 $text = $row['text'];
-                $image = $row['image'];
+                $qr_image = $row['qr-image'];
                 ?>
             <div class="row text-center">
                 <h2><?php echo $header; ?></h2>
                 <p><?php echo $text; ?></p>
             </div>
-            <img title="<?php echo $image['title']; ?>" alt="<?php echo $image['title']; ?>" src="<?php echo $image['url']; ?>">
+            <img title="<?php echo $qr_image['title']; ?>" alt="<?php echo $qr_image['title']; ?>" src="<?php echo $qr_image['url']; ?>">
            <?php endforeach; ?>
         </div>
     </div>
