@@ -14,7 +14,7 @@ else :
 endif;
 ?>
 
-<section id="modul_features" class="modul modul_features modul_show">
+<section id="modul_features" class="modul modul_features">
     <div class="row modul-content">
         <div class="col-12 col-md-4 modul-left">
             <div class="row-auto pt-6">

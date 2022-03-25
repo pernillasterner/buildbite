@@ -6,7 +6,6 @@ $text = get_sub_field('text');
 $contact_link = get_sub_field('link');
 $row = get_sub_field('main_content');
 ?>
-
 <section id="modul_get-started" class="modul modul_get-started">
     <div class="row modul-content">
         <div class="col-12 col-md-4 modul-left">
@@ -17,14 +16,14 @@ $row = get_sub_field('main_content');
                     <?php echo $content; ?>
                 </div>
             </div>
-            <a class="close" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
+            <a class="close" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
             <div class="row contact-info">
                 <p><?php echo $text; ?></p>
                 <a href="<?php echo $contact_link['url']; ?>"><?php echo $contact_link['title']; ?></a>
             </div>
         </div>
         <div class="col-12 col-md-8 modul-right">
-            <a class="close" href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
+            <a class="close" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/Close.svg" alt=""></a>
             <?php foreach($row as $row) : ?>
                 <?php 
                 $header = $row['header']; 
