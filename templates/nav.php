@@ -26,6 +26,13 @@ endif;
             
             ?>
             
+
+            <select name="" id="dropdown">
+                <option value="en">England</option>
+                <option value="se">Sverige</option>
+                <option value="fi">Finland</option>
+            </select>           
+    
             <a href="<?php echo site_url('moduls/get-started'); ?>" class="btn btn-nav btn_get-started-mobile"><?php echo $get_started; ?></a>
         </div>
     </nav>
