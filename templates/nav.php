@@ -13,7 +13,7 @@ endif;
 
     <nav class="top_navigation">
         <?php get_theme_logo(); ?>
-
+        
         <div class="menu-toppmeny-container">
             <?php $args = array(
                 'theme_location'  => 'topmenu',
@@ -26,18 +26,20 @@ endif;
             
             ?>
             
-            <select name="lang" id="lang">
-                <option value="sv">SV</option>
-                <option value="fi">FI</option>
-            </select>
 
-            <button class="btn btn-nav open"><?php echo $get_started; ?></button>
+            <select name="lang_dropdown" id="dropdown">
+                <option value="en" >&#x1F1EC;&#x1F1E7;</option>
+                <option value="se">&#x1F1F8;&#x1F1EA;</option>
+                <option value="fi">&#x1F1EB;&#x1F1EE;</option>
+            </select>           
+    
+            <a href="<?php echo site_url('moduls/get-started'); ?>" class="btn btn-nav btn_get-started-mobile"><?php echo $get_started; ?></a>
         </div>
     </nav>
     
     <div class="mobile_header">
     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
-        <button class="btn btn-nav btn_get-started-mobile open"><?php echo $get_started; ?></button>
+        <a href="<?php echo site_url('moduls/get-started'); ?>" class="btn btn-nav btn_get-started-mobile"><?php echo $get_started; ?></a>
         <button class="navbar_close" title="">
             <div class="bar"></div>
         </button>
@@ -55,6 +57,11 @@ endif;
         <nav class="main-nav">
             <div class="nav-top">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
+                <select name="lang_dropdown" id="dropdown_mobile">
+                    <option value="en" >&#x1F1EC;&#x1F1E7;</option>
+                    <option value="se">&#x1F1F8;&#x1F1EA;</option>
+                    <option value="fi">&#x1F1EB;&#x1F1EE;</option>
+                </select>
                 <?php wp_nav_menu( $args ); ?>
             </div>
             <div class="nav-footer">

@@ -36,7 +36,7 @@ endif;
                         <p><?php echo $content; ?></p>
                         <div class="row subscribe-links">
                             <?php if($link) : ?>
-                            <a class="btn btn-link-primary open-features" href="<?php echo $link['url']; ?>"><h6><?php echo $learn_more; ?></h6></a>                   
+                                <a class="btn btn-link-primary" href="<?php echo $link['url']; ?>"><h6><?php echo $learn_more; ?></h6></a>                   
                             <?php endif; ?>
                         </div>
                     </div>

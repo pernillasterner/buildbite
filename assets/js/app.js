@@ -8,27 +8,61 @@ const APP = (function () {
     document.addEventListener('DOMContentLoaded', () => {
 
         MENU.addListeners();
-
-        const open = document.querySelectorAll('.open');
-        const close = document.querySelectorAll('.close');
-        const modul_get_started = document.getElementById('modul_get-started');
-
-        const openFeatures = document.querySelectorAll('.open-features');
-        const modul_features = document.getElementById('modul_features');
         
-        openFeatures.forEach(el => el.addEventListener('click', () => {
-            modul_features.classList.add('modul_show')
-        }));
+        // console.log(window.location);
 
-        open.forEach(el => el.addEventListener('click', () => {
-            modul_get_started.classList.add('modul_show')
-        }));
+        // Language switcher
+        let pathName = window.location.pathname;
+        console.log(pathName);
+        let lang = '';
+       
+        if(pathName == '/buildbite/sv/') {
+            // console.log('sverige');
+            document.getElementById("dropdown").selectedIndex = '1';
+            document.getElementById("dropdown_mobile").selectedIndex = '1';
+            // lang = 'sv';
+        } else if(pathName == '/buildbite/fi/') {
+            // console.log('finland');
+            document.getElementById("dropdown").selectedIndex = '2';
+            document.getElementById("dropdown_mobile").selectedIndex = '2';
+            // lang = 'fi';
+        } else {
+            // console.log('england');
+            document.getElementById("dropdown").selectedIndex = '0';
+            document.getElementById("dropdown_mobile").selectedIndex = '0';
+        }
+     
 
-        close.forEach(el => el.addEventListener('click', () => {
 
-            modul_get_started.classList.remove('module_show')
-            modul_features.classList.remove('modul_show')
-        }));
+        let selections = document.querySelectorAll('select');
+        selections.forEach(selection => {
+
+            selection.addEventListener('change', () => {
+
+            let selectedIndex = selection.selectedIndex;
+            handleSelected(selectedIndex, lang);
         
+                function handleSelected(selectedIndex, lang) {
+                    
+                    // console.log(window.location.origin);
+                    window.location.href = window.location.origin + '/buildbite'
+                    // veta vart i pathname lang är lika med 
+
+                    switch(selectedIndex) {
+
+                        case 0:
+                            window.location.href = 'https://techlove.nu/buildbite/';
+                            break;
+                        case 1:
+                            window.location.href = 'https://techlove.nu/buildbite/sv/';
+                            break;
+                        case 2:
+                            window.location.href = 'https://techlove.nu/buildbite/fi/';
+                            break;
+                        default:
+                    }
+                }
+            })
+        })
     })
 })();
