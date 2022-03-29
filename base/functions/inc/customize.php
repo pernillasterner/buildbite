@@ -4,7 +4,7 @@ function get_theme_logo() {
     $logotyp_svg = get_field('logotyp_svg', 'option');
     $logotyp_png = get_field('logotyp_png', 'option');
     ?>
-    <a href="<?php echo get_site_url(); ?>" class="navbar-brand">
+    <a href="<?php echo get_site_url(); ?>" class="navbar-brand main_logo">
         <!--[if lt IE 9]>
             <img src="<?php echo $logotyp_png['url']; ?>" alt="<?php echo get_bloginfo("name"); ?>" />
         <![endif]-->
@@ -19,6 +19,9 @@ function get_theme_logo() {
         echo file_get_contents($file_path);
         ?>
         <!-- <![endif]-->
+    </a>
+    <a href="<?php echo get_site_url(); ?>" class="navbar-brand scrolled_logo">
+        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
     </a>
     <?php
 }
