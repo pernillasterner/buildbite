@@ -13,7 +13,7 @@ endif;
 
     <nav class="top_navigation">
         <?php get_theme_logo(); ?>
-
+        
         <div class="menu-toppmeny-container">
             <?php $args = array(
                 'theme_location'  => 'topmenu',
@@ -27,10 +27,10 @@ endif;
             ?>
             
 
-            <select name="" id="dropdown">
-                <option value="en">England</option>
-                <option value="se">Sverige</option>
-                <option value="fi">Finland</option>
+            <select name="lang_dropdown" id="dropdown">
+                <option value="en" >&#x1F1EC;&#x1F1E7;</option>
+                <option value="se">&#x1F1F8;&#x1F1EA;</option>
+                <option value="fi">&#x1F1EB;&#x1F1EE;</option>
             </select>           
     
             <a href="<?php echo site_url('moduls/get-started'); ?>" class="btn btn-nav btn_get-started-mobile"><?php echo $get_started; ?></a>
@@ -57,6 +57,11 @@ endif;
         <nav class="main-nav">
             <div class="nav-top">
                 <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logo_brick.svg" alt="">
+                <select name="lang_dropdown" id="dropdown_mobile">
+                    <option value="en" >&#x1F1EC;&#x1F1E7;</option>
+                    <option value="se">&#x1F1F8;&#x1F1EA;</option>
+                    <option value="fi">&#x1F1EB;&#x1F1EE;</option>
+                </select>
                 <?php wp_nav_menu( $args ); ?>
             </div>
             <div class="nav-footer">

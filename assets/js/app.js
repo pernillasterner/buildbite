@@ -13,49 +13,56 @@ const APP = (function () {
 
         // Language switcher
         let pathName = window.location.pathname;
-        // console.log(pathName);
+        console.log(pathName);
         let lang = '';
+       
         if(pathName == '/buildbite/sv/') {
             // console.log('sverige');
             document.getElementById("dropdown").selectedIndex = '1';
+            document.getElementById("dropdown_mobile").selectedIndex = '1';
             // lang = 'sv';
         } else if(pathName == '/buildbite/fi/') {
             // console.log('finland');
             document.getElementById("dropdown").selectedIndex = '2';
+            document.getElementById("dropdown_mobile").selectedIndex = '2';
             // lang = 'fi';
         } else {
             // console.log('england');
             document.getElementById("dropdown").selectedIndex = '0';
+            document.getElementById("dropdown_mobile").selectedIndex = '0';
         }
      
 
 
-        let selection = document.querySelector('select');
-        selection.addEventListener('change', () => {
+        let selections = document.querySelectorAll('select');
+        selections.forEach(selection => {
 
-        let selectedIndex = selection.selectedIndex;
-        handleSelected(selectedIndex, lang);
-      
-            function handleSelected(selectedIndex, lang) {
-                
-                // console.log(window.location.origin);
-                window.location.href = window.location.origin + '/buildbite'
-                // veta vart i pathname lang är lika med 
+            selection.addEventListener('change', () => {
 
-                switch(selectedIndex) {
+            let selectedIndex = selection.selectedIndex;
+            handleSelected(selectedIndex, lang);
+        
+                function handleSelected(selectedIndex, lang) {
+                    
+                    // console.log(window.location.origin);
+                    window.location.href = window.location.origin + '/buildbite'
+                    // veta vart i pathname lang är lika med 
 
-                    case 0:
-                        window.location.href = 'https://techlove.nu/buildbite/';
-                        break;
-                    case 1:
-                        window.location.href = 'https://techlove.nu/buildbite/sv/';
-                        break;
-                    case 2:
-                        window.location.href = 'https://techlove.nu/buildbite/fi/';
-                        break;
-                    default:
+                    switch(selectedIndex) {
+
+                        case 0:
+                            window.location.href = 'https://techlove.nu/buildbite/';
+                            break;
+                        case 1:
+                            window.location.href = 'https://techlove.nu/buildbite/sv/';
+                            break;
+                        case 2:
+                            window.location.href = 'https://techlove.nu/buildbite/fi/';
+                            break;
+                        default:
+                    }
                 }
-            }
+            })
         })
     })
 })();
