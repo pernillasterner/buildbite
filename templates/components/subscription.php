@@ -2,7 +2,7 @@
 $row = get_sub_field('subscriptions'); 
 ?>
 
-<section class="component component_subscription">
+<section id="subscription" class="component component_subscription">
     <?php if($row) : ?>
         <div class="row justify-content-md-center no-gutters">
             <?php foreach( $row as $row ) : ?>
