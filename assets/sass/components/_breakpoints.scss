@@ -1,6 +1,6 @@
 $breakpoints: (
   "xs": 0,
-  "sm": 375px,
+  "sm": 450px,
   "md": 834px,
   "lg": 1194px,
   "xl": 1440px,
@@ -8,18 +8,6 @@ $breakpoints: (
 ) !default;
 
 // (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px) techlove
-
-// @mixin mq($width, $type: min) {
-//     @if map_has_key($breakpoints, $width) {
-//         $width: map_get($breakpoints, $width);
-//         @if $type == max {
-//             $width: $width - 1px;
-//         }
-//         @media only screen and (#{$type}-width: $width) {
-//             @content;
-//         }
-//     }
-// }
 
 @mixin media-breakpoint-up($breakpoint) {
   // If the key exists in the map
