@@ -23,7 +23,7 @@ $total_tags = 8;
                         <h5 class="mb-2"><?php echo $text; ?></h5>
                         <!-- Only display selected tags -->
                         <?php for($i = 0; $i <= $total_tags; $i++) : ?>
-                            <?php if( isset($tags[$i]['tag']) ) : ?>
+                            <?php if( isset($tags[$i]['tag']) &&  $tags[$i]['show_tag_on_desktop'] ) : ?>
                                 <div class="row d-inline-block mb-1">
                                     <ul>
                                         <li class="mr-1"><h6><?php echo $tags[$i]['tag']; ?></h6></li>
