@@ -1,6 +1,6 @@
 const IMAGE_SLIDER = (function () {
 
-   const scrollAmount = -600;
+   const scrollAmount = -900;
    const containers   = document.querySelectorAll('#text_image_container');
    const image_container = document.querySelector('#image-container');
    const bg_images = document.querySelectorAll('#background-img');
